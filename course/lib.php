@@ -2553,7 +2553,7 @@ function create_course($data, $editoroptions = NULL) {
     $category = $DB->get_record('course_categories', array('id'=>$data->category), '*', MUST_EXIST);
 
     // Check if the shortname already exists.
-    if (!empty($data->shortname)) {
+    /*if (!empty($data->shortname)) {
         if ($DB->record_exists('course', array('shortname' => $data->shortname))) {
             throw new moodle_exception('shortnametaken', '', '', $data->shortname);
         }
@@ -2564,7 +2564,7 @@ function create_course($data, $editoroptions = NULL) {
         if ($DB->record_exists('course', array('idnumber' => $data->idnumber))) {
             throw new moodle_exception('courseidnumbertaken', '', '', $data->idnumber);
         }
-    }
+    }*/
 
     // Check if timecreated is given.
     $data->timecreated  = !empty($data->timecreated) ? $data->timecreated : time();
@@ -2661,7 +2661,7 @@ function update_course($data, $editoroptions = NULL) {
     }
 
     // Check we don't have a duplicate shortname.
-    if (!empty($data->shortname) && $oldcourse->shortname != $data->shortname) {
+    /*if (!empty($data->shortname) && $oldcourse->shortname != $data->shortname) {
         if ($DB->record_exists_sql('SELECT id from {course} WHERE shortname = ? AND id <> ?', array($data->shortname, $data->id))) {
             throw new moodle_exception('shortnametaken', '', '', $data->shortname);
         }
@@ -2672,7 +2672,7 @@ function update_course($data, $editoroptions = NULL) {
         if ($DB->record_exists_sql('SELECT id from {course} WHERE idnumber = ? AND id <> ?', array($data->idnumber, $data->id))) {
             throw new moodle_exception('courseidnumbertaken', '', '', $data->idnumber);
         }
-    }
+    }*/
 
     if (!isset($data->category) or empty($data->category)) {
         // prevent nulls and 0 in category field

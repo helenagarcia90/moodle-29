@@ -4,7 +4,7 @@
 
     require_once('../../config.php');
     require_once('lib.php');
-    require_once($CFG->libdir.'/conditionlib.php');
+    //require_once($CFG->libdir.'/conditionlib.php');
     require_once($CFG->libdir.'/completionlib.php');
 
     $id          = optional_param('id', 0, PARAM_INT);
@@ -189,10 +189,10 @@
         redirect($CFG->wwwroot .'/');
     }
 
-    $ajaxenabled = ajaxenabled();
+    //$ajaxenabled = ajaxenabled();
 
     $completion = new completion_info($course);
-    if ($completion->is_enabled() && $ajaxenabled) {
+    if ($completion->is_enabled() /*&& $ajaxenabled*/) {
         $PAGE->requires->string_for_js('completion-title-manual-y', 'completion');
         $PAGE->requires->string_for_js('completion-title-manual-n', 'completion');
         $PAGE->requires->string_for_js('completion-alt-manual-y', 'completion');

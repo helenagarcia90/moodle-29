@@ -54,19 +54,32 @@ $phoneno  = theme_eguru_get_setting('phoneno');
             	<div class="span4">
                 	<div class="footer-desc">
                     	<div class="logo-footer">
-                        	<a href="<?php echo $CFG->wwwroot;?>">
-                            	<img src="<?php echo theme_eguru_get_logo_url(); ?>" width="183" height="67" alt="Eguru">
+                        	<a href="#">
+                                <img src="<?php print $CFG->wwwroot; ?>/theme/eguru/pix/home/logo3.jpg" style="height:50px; margin-bottom: 10px;" />
+                            </a>
+                            <a href="#">    
+                                <img src="<?php print $CFG->wwwroot; ?>/theme/eguru/pix/home/logo4.gif" style="height:50px;" />
                             </a>
                         </div>
                         <?php echo '<p>'.$footnote.'</p>'; ?>
                     </div>
                 </div>
-            	<div class="span2">
+            	<!--div class="span2">
                 	<div class="footer-nav">
                     	<h4><?php echo $footerbtitle2; ?></h4>
                         <ul>                        	
                            <?php echo theme_eguru_generate_links('footerblink2'); ?>  
                         </ul>
+                    </div>
+                </div-->
+                <div class="span2">
+                    <div class="footer-desc">
+                        <div class="logo-footer">
+                            <a href="http://www.ocularis-jp.org">
+                                <img src="<?php print $CFG->wwwroot; ?>/theme/eguru/pix/home/logo2.png" style="height:120px;" />
+                            </a>
+                        </div>
+                        <?php echo '<p>'.$footnote.'</p>'; ?>
                     </div>
                 </div>
             	<div class="span3">
@@ -151,8 +164,9 @@ endif;
     
 	<div class="footer-foot">
     	<div class="container-fluid">
-        	<p class="text-center">Copyright &copy; 2015 - Developed by 
-            <a href="http://www.lmsthemes.com/">Lmsthemes.com</a>.Powered by <a href="https://moodle.org">Moodle</a></p>
+        	<p class="text-center"><b>©<?php echo date("Y"); ?> Abass N'Dao e-Learning</b></p>
+            <p class="text-center">Based on <a href="https://moodle.org">Moodle</a></p>
+            <p class="text-center">GNU <a href="http://www.gnu.org/licenses/">Licence</a></p>
         </div>
     </div>
 
