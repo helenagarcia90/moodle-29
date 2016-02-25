@@ -52,14 +52,14 @@ if ($numberofslides) { ?>
     ?>
                 <div class="item<?php echo $clstxt2; ?>" style="background-image: url(<?php echo $slideimg; ?>);">
                 	<div class="container-fluid item-inner-wrap">
-                        <div class="carousel-content">
+                        <!--div class="carousel-content">
                             <h2><?php echo $slidecaption; ?></h2>
                             <div class="carousel-btn">
                              <a href="<?php echo $slideurl; ?>">
 							 <?php echo $slideurltext; ?>
                              <i class="fa fa-arrow-left"></i><i class="fa fa-arrow-right"></i></a>
                             </div>
-                        </div>
+                        </div-->
                     </div>
                 </div>
                 

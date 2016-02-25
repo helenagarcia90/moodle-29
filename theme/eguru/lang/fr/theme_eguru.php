@@ -165,3 +165,4 @@ soit clé de langue ou de texte.For ex: lang:display or Display';
 $string['termsofuse'] = 'Conditions d\'utilisation';
 $string['faq'] = 'FAQ';
 $string['support'] = 'Soutien';
+$string['subjects'] = 'Matières';

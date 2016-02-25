@@ -51,111 +51,93 @@ $phoneno  = theme_eguru_get_setting('phoneno');
 	<div class="footer-main">
     	<div class="container-fluid">
 	    	<div class="row-fluid">
-            	<div class="span4">
+            	<div class="span3">
                 	<div class="footer-desc">
                     	<div class="logo-footer">
-                        	<a href="#">
-                                <img src="<?php print $CFG->wwwroot; ?>/theme/eguru/pix/home/logo3.jpg" style="height:50px; margin-bottom: 10px;" />
+                        	<a href="http://www.terrassa.cat/solidaritat" target="_blank">
+                                <img src="<?php print $CFG->wwwroot; ?>/theme/eguru/pix/home/logo3.png" style="width:200px; margin-bottom: 50px;" />
                             </a>
-                            <a href="#">    
-                                <img src="<?php print $CFG->wwwroot; ?>/theme/eguru/pix/home/logo4.gif" style="height:50px;" />
+                            <a href="http://www.udl.es/ target="_blank"">    
+                                <img src="<?php print $CFG->wwwroot; ?>/theme/eguru/pix/home/logo5.png" style="width:200px;" />
                             </a>
                         </div>
                         <?php echo '<p>'.$footnote.'</p>'; ?>
                     </div>
                 </div>
-            	<!--div class="span2">
-                	<div class="footer-nav">
-                    	<h4><?php echo $footerbtitle2; ?></h4>
-                        <ul>                        	
-                           <?php echo theme_eguru_generate_links('footerblink2'); ?>  
-                        </ul>
-                    </div>
-                </div-->
-                <div class="span2">
+                <div class="span3">
                     <div class="footer-desc">
                         <div class="logo-footer">
-                            <a href="http://www.ocularis-jp.org">
-                                <img src="<?php print $CFG->wwwroot; ?>/theme/eguru/pix/home/logo2.png" style="height:120px;" />
+                            <a href="http://www.paeria.es/" target="_blank">    
+                                <img src="<?php print $CFG->wwwroot; ?>/theme/eguru/pix/home/logo4.gif" style="width:150px; margin-bottom: 50px;" />
+                            </a>
+                            <a href="http://www.fundacioferreruela.com/" target="_blank">    
+                                <img src="<?php print $CFG->wwwroot; ?>/theme/eguru/pix/home/logo6.png" style="width:150px;" />
+                            </a>
+                        </div>
+                        <?php echo '<p>'.$footnote.'</p>'; ?>
+                    </div>
+                </div>
+                <div class="span3">
+                    <div class="footer-nav">
+                        <div class="logo-footer">
+                            <a href="http://www.ocularis-jp.org" target="_blank">
+                                <img src="<?php print $CFG->wwwroot; ?>/theme/eguru/pix/home/logo2.png" style="height:190px;" />
                             </a>
                         </div>
                         <?php echo '<p>'.$footnote.'</p>'; ?>
                     </div>
                 </div>
             	<div class="span3">
-                	<div class="social-media">
+                    <div class="footer-contact">
+                        <h4><?php echo $footerbtitle4; ?></h4>
+                        <p><?php echo $address; ?></p>
+                        <?php if(!empty($phoneno)): ?>
+                            <p><i class="fa fa-phone-square"></i>Phone: <?php echo $phoneno; ?></p>
+                        <?php endif; ?>
+                        <?php if(!empty($emailid)): ?>
+                            <p><i class="fa fa-envelope"></i>
+                                E-mail: <a class="mail-link" href="mailto:<?php echo $emailid; ?>"><?php echo $emailid; ?></a>
+                            </p>
+                        <?php endif;?>
+                    </div>
+                	<div class="social-media" style="margin: 10px 0px 40px 0px;">
                     	<h4><?php echo $footerbtitle3; ?></h4>
                     	<ul>
-                         <?php if(!empty($fburl)): ?>
-                        	<li class="smedia-01">
+                           	<li class="smedia-01" style="margin-top: -20px;">
+                                <?php if(!empty($fburl)): ?>
                             	<a href="<?php echo $fburl; ?>" target="_blank">
                                 	<span class="media-icon">
                                     <i class="fa <?php echo get_string('mediaicon1', 'theme_eguru'); ?>"></i>
                                     </span>
-                                    <span class="media-name"><?php echo get_string('medianame1', 'theme_eguru'); ?></span>
+                                    <!--span class="media-name"><?php echo get_string('medianame1', 'theme_eguru'); ?></span-->
                                 </a>
-                            </li>
-<?php
-endif;
-?>
-                          
-						  <?php if(!empty($twurl)): ?>  
-                        	<li class="smedia-02">
-	                            <a href="<?php echo $twurl; ?>" target="_blank">
-                                	<span class="media-icon">
+                                <?php endif; ?>
+                                <?php if(!empty($twurl)): ?>
+                                <a href="<?php echo $twurl; ?>" target="_blank">
+                                    <span class="media-icon">
                                     <i class="fa <?php echo get_string('mediaicon2', 'theme_eguru'); ?>"></i>
                                     </span>
-                                    <span class="media-name"><?php echo get_string('medianame2', 'theme_eguru'); ?></span>
+                                    <!--span class="media-name"><?php echo get_string('medianame2', 'theme_eguru'); ?></span-->
                                 </a>
-                            </li>
-<?php
-endif;
-?>
-                            
-                            <?php if(!empty($gpurl)): ?>
-                        	<li class="smedia-03">
-    	                        <a href="<?php echo $gpurl; ?>" target="_blank">
-                                	<span class="media-icon">
+                                <?php endif; ?>
+                                <?php if(!empty($gpurl)): ?>                                
+                                <a href="<?php echo $gpurl; ?>" target="_blank">
+                                    <span class="media-icon">
                                     <i class="fa <?php echo get_string('mediaicon3', 'theme_eguru'); ?>"></i>
                                     </span>
-                                    <span class="media-name"><?php echo get_string('medianame3', 'theme_eguru'); ?></span>
+                                    <!--span class="media-name"><?php echo get_string('medianame3', 'theme_eguru'); ?></span-->
                                 </a>
-                            </li>
-<?php
-endif;
-?>
-                            
-                            <?php if(!empty($pinurl)): ?> 
-                        	<li class="smedia-04">
-        	                    <a href="<?php echo $pinurl; ?>" target="_blank">
-                                   <span class="media-icon">
-                                   <i class="fa <?php echo get_string('mediaicon4', 'theme_eguru'); ?>"></i>
-                                   </span>
-                                   <span class="media-name"><?php echo get_string('medianame4', 'theme_eguru'); ?></span>
+                                <?php endif; ?>
+                                <?php if(!empty($pinurl)): ?>                                
+                                <a href="<?php echo $pinurl; ?>" target="_blank">
+                                    <span class="media-icon">
+                                    <i class="fa <?php echo get_string('mediaicon4', 'theme_eguru'); ?>"></i>
+                                    </span>
+                                    <!--span class="media-name"><?php echo get_string('medianame4', 'theme_eguru'); ?></span-->
                                 </a>
+                                <?php endif; ?>
                             </li>
-<?php
-endif;
-?>
                         </ul>
-                    </div>
-                </div>
-            	<div class="span3">
-                	<div class="footer-contact">
-                    	<h4><?php echo $footerbtitle4; ?></h4>
-						<p><?php echo $address; ?></p>
-                        <?php if(!empty($phoneno)): ?>
-                        <p><i class="fa fa-phone-square"></i>Phone: <?php echo $phoneno; ?></p>
-<?php
-endif;
-?>
-                        <?php if(!empty($emailid)): ?>
-                        <p><i class="fa fa-envelope"></i>
-                        E-mail: <a class="mail-link" href="mailto:<?php echo $emailid; ?>"><?php echo $emailid; ?></a>
-                        </p>
-<?php
-endif;
-?>
                     </div>
                 </div>
             </div>
@@ -164,9 +146,9 @@ endif;
     
 	<div class="footer-foot">
     	<div class="container-fluid">
-        	<p class="text-center"><b>©<?php echo date("Y"); ?> Abass N'Dao e-Learning</b></p>
-            <p class="text-center">Based on <a href="https://moodle.org">Moodle</a></p>
-            <p class="text-center">GNU <a href="http://www.gnu.org/licenses/">Licence</a></p>
+        	<p class="text-center"><b>©<?php echo date("Y"); ?> UCAD e-Learning</b></p>
+            <p class="text-center">Based on <a href="https://moodle.org" target="_blank">Moodle</a></p>
+            <p class="text-center">GNU <a href="http://www.gnu.org/licenses/" target="_blank">Licence</a></p>
         </div>
     </div>
 

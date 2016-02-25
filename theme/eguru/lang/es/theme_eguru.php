@@ -160,3 +160,4 @@ cualquiera de las teclas idioma o Text.For ex: lang:display or Display';
 $string['termsofuse'] = 'Condiciones de uso';
 $string['faq'] = 'PF';
 $string['support'] = 'apoyo';
+$string['subjects'] = 'Asignaturas';
