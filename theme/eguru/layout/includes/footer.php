@@ -57,7 +57,7 @@ $phoneno  = theme_eguru_get_setting('phoneno');
                         	<a href="http://www.terrassa.cat/solidaritat" target="_blank">
                                 <img src="<?php print $CFG->wwwroot; ?>/theme/eguru/pix/home/logo3.png" style="width:200px; margin-bottom: 50px;" />
                             </a>
-                            <a href="http://www.udl.es/ target="_blank"">    
+                            <a href="http://www.udl.es/" target="_blank">    
                                 <img src="<?php print $CFG->wwwroot; ?>/theme/eguru/pix/home/logo5.png" style="width:200px;" />
                             </a>
                         </div>

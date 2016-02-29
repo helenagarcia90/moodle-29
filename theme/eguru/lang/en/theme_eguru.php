@@ -165,4 +165,4 @@ either language key or Text.For ex: lang:display or Display';
 $string['termsofuse'] = 'Terms of use';
 $string['faq'] = 'FAQ';
 $string['support'] = 'Support';
-$string['subjects'] = 'Subjects';
+$string['learn'] = 'Learn';

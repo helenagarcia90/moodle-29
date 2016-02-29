@@ -57,8 +57,6 @@ if (!isloggedin() || isguestuser()) {
                 	<li><a href="<?php echo new moodle_url('/course/index.php'); ?>">
 					<?php echo get_string('courses'); ?></a></li>
                   <li><a href="<?php echo new moodle_url('/template_course/index.php'); ?>">
-          <?php echo /*get_string('subjects');*/ 'Sujets'; ?></a></li>
-                	<li class="no-divider"><a href="<?php echo new moodle_url('/login/index.php'); ?>">
 					<?php echo get_string("login").$guesttxt; ?></a></li>
                 </ul>
             </div>
@@ -69,7 +67,16 @@ if (!isloggedin() || isguestuser()) {
             	<ul>
                 	<li><a href="<?php echo $CFG->wwwroot;?>"><?php echo get_string('home'); ?></a></li>
                 	<li><a href="<?php echo new moodle_url('/course/index.php'); ?>"><?php echo get_string('courses'); ?></a></li>
-                  <li><a href="<?php echo new moodle_url('/local/template_course/index.php'); ?>"><?php echo /*get_string('subjects');*/ 'Sujets'; ?></a></li>
+<?php
+if (isloggedin() && is_siteadmin()) {
+?>
+                  <li><a href="<?php echo new moodle_url('/local/template_course/index.php'); ?>">
+                    <?php echo get_string('subjects');/*'Matières';*/ ?>
+                  </a></li>
+<?php
+}
+?>
+
 <?php
 if (!isloggedin() || isguestuser()) {
 ?>
