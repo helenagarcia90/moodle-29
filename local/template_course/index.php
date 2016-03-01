@@ -33,7 +33,7 @@
         
         //IMPRIMIM EL CONTINGUT        
         $site = get_site();
-        $PAGE->set_title("$site->fullname: Sujets");
+        $PAGE->set_title("$site->fullname: " . get_string('subjects'));
         $PAGE->set_heading("$site->fullname");
         echo $OUTPUT -> header();
       

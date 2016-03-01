@@ -36,7 +36,7 @@ class template_course_renderer extends core_course_renderer {
         
         $coursecat = coursecat::get(is_object($category) ? $category->id : $category);
         $site = get_site();
-        $output = '<h2>Sujets</h2>';
+        $output = '<h2>' . get_string('subjects') . '</h2>';
 
         // Print current category description
         $chelper = new coursecat_helper();
@@ -98,7 +98,7 @@ class template_course_renderer extends core_course_renderer {
         
         if (has_capability('moodle/course:create', $context)) {
             $url = new moodle_url('/local/template_course/edit.php', array('returnto' => 'category', 'edit' => 'on'));
-            $output .= $this->single_button($url, 'Ajouter un nouveau sujet', 'get');
+            $output .= $this->single_button($url, get_string('add_subject'), 'get');
         }
         
         ob_start();

@@ -2049,3 +2049,4 @@ $string['yourteacher'] = 'your {$a}';
 $string['yourwordforx'] = 'Your word for \'{$a}\'';
 $string['zippingbackup'] = 'Zipping backup';
 $string['subjects'] = 'Subjects';
+$string['add_subject'] = 'Add new subject';
