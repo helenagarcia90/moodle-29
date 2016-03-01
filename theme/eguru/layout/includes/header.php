@@ -56,7 +56,7 @@ if (!isloggedin() || isguestuser()) {
             	<ul>
                 	<li><a href="<?php echo new moodle_url('/course/index.php'); ?>">
 					<?php echo get_string('courses'); ?></a></li>
-                  <li><a href="<?php echo new moodle_url('/template_course/index.php'); ?>">
+                  <li><a href="<?php echo new moodle_url('/login/index.php'); ?>">
 					<?php echo get_string("login").$guesttxt; ?></a></li>
                 </ul>
             </div>
