@@ -66,8 +66,12 @@ if (!isloggedin() || isguestuser()) {
     	    <div class="custom-menu visible-desktop">
             	<ul>
                 	<li><a href="<?php echo $CFG->wwwroot;?>"><?php echo get_string('home'); ?></a></li>
+<?php
+if (isloggedin()) {
+?>
                 	<li><a href="<?php echo new moodle_url('/course/index.php'); ?>"><?php echo get_string('courses'); ?></a></li>
 <?php
+}
 if (isloggedin() && is_siteadmin()) {
 ?>
                   <li><a href="<?php echo new moodle_url('/local/template_course/index.php'); ?>">
